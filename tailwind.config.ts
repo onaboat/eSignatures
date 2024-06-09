@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+// import type { Config } from "tailwindcss"
 const { fontFamily } = require("tailwindcss/defaultTheme")
 
 const config = {
@@ -53,7 +53,9 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        
+        fontFamily: {
+          sans: ["var(--font-sans)", ...fontFamily.sans],
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -77,6 +79,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} 
 
 export default config

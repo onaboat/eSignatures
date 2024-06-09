@@ -283,13 +283,13 @@ export default function Dashboard() {
                       <Label htmlFor="category" className="text-white">I would like to</Label>
 
                       <Select>
-                        <SelectTrigger id="category" aria-label="Send a new contract">
-                          <SelectValue placeholder="Send a new contract" />
+                        <SelectTrigger id="category" className="text-black" aria-label="Send a new contract">
+                          <SelectValue  className="text-black" placeholder="Send a new contract" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="clothing">Send a new contract</SelectItem>
-                          <SelectItem value="electronics">Bulk send contracts</SelectItem>
-                          <SelectItem value="accessories">Create a Contract link</SelectItem>
+                          <SelectItem value="newContract">Send a new contract</SelectItem>
+                          <SelectItem value="BulkSend">Bulk send contracts</SelectItem>
+                          <SelectItem value="CreatContractLink">Create a Contract link</SelectItem>
                         </SelectContent>
                       </Select>
 
@@ -297,13 +297,13 @@ export default function Dashboard() {
 
                       <Label htmlFor="category" className="text-white">Using this template</Label>
                       <Select >
-                        <SelectTrigger id="category" aria-label="-Blank Contract">
-                          <SelectValue placeholder="-Blank Contract" />
+                        <SelectTrigger id="category" className="text-black" aria-label="-Blank Contract">
+                          <SelectValue className="text-black" placeholder="-Blank Contract" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="clothing">-Blank Contract</SelectItem>
-                          <SelectItem value="electronics">Sample Consulting Agreement</SelectItem>
-                          <SelectItem value="accessories">Sample Service Agreement</SelectItem>
+                          <SelectItem value="BlankContract">-Blank Contract</SelectItem>
+                          <SelectItem value="SampleConsulting">Sample Consulting Agreement</SelectItem>
+                          <SelectItem value="SampleService">Sample Service Agreement</SelectItem>
                         </SelectContent>
                       </Select>
                     </CardContent>
